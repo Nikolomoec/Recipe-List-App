@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5AAC16CD291583A7009C9E32 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC16CC291583A7009C9E32 /* RecipeTabView.swift */; };
+		5AAC16D129183660009C9E32 /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC16D029183660009C9E32 /* FeaturedView.swift */; };
 		5AB5D9762907016100BDF486 /* Recipe_List_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5D9752907016100BDF486 /* Recipe_List_App.swift */; };
 		5AB5D9782907016100BDF486 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5D9772907016100BDF486 /* RecipeListView.swift */; };
 		5AB5D97A2907016100BDF486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB5D9792907016100BDF486 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		5AAC16CC291583A7009C9E32 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
+		5AAC16D029183660009C9E32 /* FeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
 		5AB5D9722907016100BDF486 /* Recipe List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB5D9752907016100BDF486 /* Recipe_List_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_List_App.swift; sourceTree = "<group>"; };
 		5AB5D9772907016100BDF486 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				5AAC16CC291583A7009C9E32 /* RecipeTabView.swift */,
 				5AB5D9772907016100BDF486 /* RecipeListView.swift */,
+				5AAC16D029183660009C9E32 /* FeaturedView.swift */,
 				5AB5D9922908422700BDF486 /* DetailView.swift */,
 			);
 			path = Views;
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAC16D129183660009C9E32 /* FeaturedView.swift in Sources */,
 				5AB5D9782907016100BDF486 /* RecipeListView.swift in Sources */,
 				5AB5D9932908422700BDF486 /* DetailView.swift in Sources */,
 				5AB5D98D2907052800BDF486 /* RecipeModel.swift in Sources */,
