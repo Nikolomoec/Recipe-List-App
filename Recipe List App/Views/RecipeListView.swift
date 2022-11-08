@@ -13,24 +13,36 @@ struct RecipeListView: View {
     
     var body: some View {
         NavigationView{
-            List(model.recipes){ r in
+            VStack(alignment: .leading) {
                 
-                NavigationLink {
-                    DetailView(recipe: r)
-                } label: {
-                    HStack(spacing: 20){
-                        Image(r.image)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 50, height: 50, alignment: .center)
-                            .clipped()
-                            .cornerRadius(5)
-                        Text(r.name)
-                        
+                Text("All Recipes")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding(.top, 40)
+                ScrollView {
+                    LazyVStack (alignment: .leading) {
+                        ForEach(model.recipes){ r in
+                            
+                            NavigationLink {
+                                DetailView(recipe: r)
+                            } label: {
+                                HStack(spacing: 20){
+                                    Image(r.image)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 50, height: 50, alignment: .center)
+                                        .clipped()
+                                        .cornerRadius(5)
+                                    Text(r.name)
+                                        .foregroundColor(.black)
+                                }
+                            }
+                        }
                     }
                 }
             }
-            .navigationTitle("All Recipes")
+            .navigationBarHidden(true)
+            .padding(.leading)
         }
     }
 }
